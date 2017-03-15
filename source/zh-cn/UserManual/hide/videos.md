@@ -1,5 +1,21 @@
 title: 视频教程
 ---
+# 机智云开源框架App使用教程
+开源框架是机智云的出品，包含Wi-Fi类智能硬件app通用功能的一套源码。只要使用机智云协议的产品，开发者可以直接用该框架的源码实现快速开发配套app，从而满足app开发周期短、成本低的要求。
+本教程将给大家介绍如何使用机智云开源框架，开发属于自己产品的app，按由易到难、从基础功能到高级功能.如果只想要一个简单的设备控制功能app，只学习前三个章节就可以了。想要使用高级功能(如：微信和QQ登录、百度和极光推送功能)，可以继续关注后面的章节。
+## 1、App开发前传	
+http://v.qq.com/x/page/p0344jspddv.html	
+开发者中心产品及设备应用创建
+
+## 2、iOS APP开发	
+http://v.qq.com/x/page/b0350blmgcf.html	
+使用开源框架快速开发一个功能简单的iOS App
+
+## 3、Android APP开发	
+http://v.qq.com/x/page/p03512if92n.html	
+使用开源框架快速开发一个功能简单的Android App
+
+
 # Gokit3入门视频（2016）
 Gokit3是GoKit产品系列的第三代，支持MCU、SoC、BLE、语音、模式切换等特性。目前支持的SoC方案模组有ESP8266、Hi3518E模组、宇音天下模组等。详情请点击：[详细介绍](http://docs.gizwits.com/zh-cn/deviceDev/Gokit3/Gokit3%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6%E7%AE%80%E4%BB%8B.html)
 ## 1 GoKit3介绍	
