@@ -1,29 +1,32 @@
 title:  平台概述2
 ---
+- [专题热点](http://topic.gizwits.com/)               [下载中心](http://dev.gizwits.com/zh-cn/developer/resource/hardware?type=GAgent)
 
 # 机智云平台概述
 机智云平台是机智云物联网公司经过多年行业内的耕耘及对物联网行业的深刻理解，而推出的面向个人、企业开发者的一站式智能硬件开发及云服务平台。平台提供了从定义产品、设备端开发调试、应用开发、产测、云端开发、运营管理、数据服务等覆盖智能硬件接入到运营管理全生命周期服务的能力。
 
 机智云平台为开发者提供了自助式智能硬件开发工具与开放的云端服务。通过傻瓜化的自助工具、完善的SDK与API服务能力最大限度降低了物联网硬件开发的技术门槛，降低开发者的研发成本，提升开发者的产品投产速度，帮助开发者进行硬件智能化升级，更好的连接、服务最终消费者。
 
+
 # 机智云平台架构
 
 ![@机智云PaaS平台架构](/assets/zh-cn/OverVeiw/架构.png)
 
 
-## 1、设备接入开发
-硬件厂商对硬件智能化的第一步是让设备能够联网，GAgent是机智云提供的一款兼容国内主流Wi-Fi模块、移动网络模块的模组系统。硬件厂商只需理解如何与GAgent进行通讯即可。
+# 快速入门
+硬件厂商对硬件智能化的第一步是让设备能够联网，GAgent是机智云提供的一款兼容国内主流Wi-Fi模块、移动网络模块的模组系统，可以提供上层应用（手机APP等控制端、云端）到产品设备的双向数据通讯，此外，还提供对设备的配置入网、发现绑定、程序升级等功能。
+产品开发者使用GAgent后，只需要关心产品的业务逻辑开发，不用关心数据的通讯功能开发，大大降低了开发的难度。目前机智云提供由机智云移植的WiFi模组对应固件有：[汉枫LPB100](http://docs.gizwits.com/zh-cn/deviceDev/HF-LPB100%E4%B8%B2%E5%8F%A3%E7%83%A7%E5%86%99%E8%AF%B4%E6%98%8E.html)、[乐鑫8266](http://docs.gizwits.com/zh-cn/deviceDev/ESP8266%E4%B8%B2%E5%8F%A3%E7%83%A7%E5%86%99%E8%AF%B4%E6%98%8E.html)、[汉枫LPT120](http://docs.gizwits.com/zh-cn/deviceDev/debug/HF-LPT120.html)、高通4004 、RealTek 8711AM 、[庆科3162](http://docs.gizwits.com/zh-cn/deviceDev/MXCHIP%E4%B8%B2%E5%8F%A3%E7%83%A7%E5%86%99%E8%AF%B4%E6%98%8E.html)、[广和通G510](http://docs.gizwits.com/zh-cn/deviceDev/debug/G510.html)等。
 
 相关链接：
 
  [了解GAgent](../deviceDev/gagent_info.html)
  
  [设备如何快速接入](/zh-cn/quickstart/设备快速接入.html)
+ 
 
 
-## 2、手机应用开发
-- 机智云提供了APP SDK、开源框架、微信SDK，便于开发者快速构建手机应用端系统，只需根据工具指引实现业务功能，无需实现底层功能
-
+# 手机应用开发（APP）
+- 机智云提供了APP SDK、开源框架、微信SDK，便于开发者快速构建手机应用端系统，只需根据工具指引实现业务功能，无需实现底层功能。
 相关链接：
 
  [APP开源框架](/zh-cn/AppDev/iosframe.html)
@@ -33,19 +36,125 @@ title:  平台概述2
  [IOS SDK接入](/zh-cn/AppDev/iOSSDKA2.html)
  
  [微信开发](/zh-cn/WechatDev/WeChatDev.html)
+ 
+ 
 
-## 3、企业应用开发
-开发者如果已完成设备接入、APP开发，还需要从机智云PaaS平台获取数据构建一套业务管理系统，或者访问机智云提供的服务，则需了解以下文档
+# 设备开发
+## Gokit 资料：
+Gokit3是GoKit产品系列的第三代，支持MCU、SoC、BLE、语音、模式切换等特性。目前支持的SoC方案模组有ESP8266、Hi3518E模组、宇音天下模组等。目的是帮助传统硬件快速接入互联网。完成入网之后，数据可以在产品与云端、制造商与用户之间互联互通，实现智能互联。
 
+相关资料：
+- [Gokit3系列开发套件简介](http://docs.gizwits.com/zh-cn/deviceDev/Gokit3/Gokit3%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6%E7%AE%80%E4%BB%8B.html)
+- [GoKit 3 硬件手册](http://docs.gizwits.com/zh-cn/deviceDev/Gokit3/GoKit3%E7%A1%AC%E4%BB%B6%E6%89%8B%E5%86%8C.html)
+- [GoKit3(S)开发套件介绍](http://docs.gizwits.com/zh-cn/deviceDev/WiFiSOC/GoKit3S%E5%BC%80%E5%8F%91%E5%A5%97%E4%BB%B6%E4%BB%8B%E7%BB%8D.html)
+- [GoKit3(S) 二次开发--开发环境搭](http://docs.gizwits.com/zh-cn/deviceDev/WiFiSOC/GoKit3S%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91.html)
+- [GoKit3(S)二次开发-程序详解](http://docs.gizwits.com/zh-cn/deviceDev/WiFiSOC/GoKit3S%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3.html)
+
+## MCU代码自动生成入门
+什么是“代码自动生成工具”？
+为了降低开发者的开发门槛，缩短开发周期，降低开发资源投入，机智云推出了代码自动生成服务。云端会根据产品定义的数据点生成对应产品的设备端代码。
+
+自动生成的代码实现了机智云通信协议的解析与封包、传感器数据与通信数据的转换逻辑，并封装成了简单的API，且提供了多种平台的实例代码。当设备收到云端或APP端的数据后，程序会将数据转换成对应的事件并通知到应用层，开发者只需要在对应的事件处理逻辑中添加传感器的控制函数，就可以完成产品的开发。
+
+使用自动生成的代码开发产品，就不必再处理协议相关的部分了，开发者可以将节省出来的精力集中在产品的核心功能开发上。
+支持的平台
+自动生成服务支持的硬件方案有：独立MCU方案、SOC方案。其中独立MCU方案支持的硬件平台有：stm32f103c8x平台、通用平台（即“其他平台”）；SOC方案支持的硬件平台有：ESP8266平台。
+
+相关视频：
+- [MCU代码自动生成工具介绍](http://docs.gizwits.com/zh-cn/deviceDev/DevSDK/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7.html)
+以Gokit3为例，讲述MCU代码自动生成工具使用的原理。
+
+- [DEV SDK Common版移植说明](http://docs.gizwits.com/zh-cn/deviceDev/GoKit3%20DEV%20SDK%20Common%E7%89%88%E7%A7%BB%E6%A4%8D%E8%AF%B4%E6%98%8E.html)
+MCU方案默认支持 STM32F103C8x 平台，如果是其他MCU芯片，可以将我们生成好的 通用平台版代码 移植到符合条件的平台，从而实现机智云所提供的各种功能。
+
+## 机智云ECE demo开发教程
+
+ECE雾计算入门教程 
+http://docs.gizwits.com/zh-cn/UserManual/ecevideos.html
+本教程配合下载中心的ECE固件开发包使用，结合一个demo教程，教你如何进行ece开发。
+相关视频：
+- [企业账号注册](https://v.qq.com/x/page/n0362u2fgws.html)
+- [固件烧录](http://v.qq.com/x/page/r03612h7pr0.html)
+- [pk烧录](http://v.qq.com/x/page/p0361baxn9z.html)
+- [MCU协议介绍](http://v.qq.com/x/page/a03619wrrqr.html)
+- [lua脚本讲解](http://v.qq.com/x/page/d03617dbq8p.html)
+- [gokit跑lua演示](http://v.qq.com/x/page/y0361kmy887.html)
+
+## Arduino UNO WiFi开发教程
+
+相关视频：
+- [ArduinoUNOWiFi接入机智云介绍](http://docs.gizwits.com/zh-cn/deviceDev/ArduinoUNO/intro.html)
+- [ArduinoUnoWiFi 之ESP8266固件烧写教程](http://docs.gizwits.com/zh-cn/deviceDev/ArduinoUNO/Tutorial.html)
+- [ArduinoUnoWiFi SDK之API介绍](http://docs.gizwits.com/zh-cn/deviceDev/ArduinoUNO/sdk.html)
+- [Arduino Uno WiFi智能小夜灯](http://docs.gizwits.com/zh-cn/deviceDev/ArduinoUNO/example.html)
+
+# 云平台
+## 企业应用开发
+开发者如果已完成设备接入、APP开发，还需要从机智云PaaS平台获取数据构建一套业务管理系统，或者访问机智云提供的服务，则需了解以下文档:
+- [了解企业应用开发](../Cloud/ent_dev.html)
+- [了解消息代理服务接口](../Cloud/noti1.0.html)
+- [了解企业API](../Cloud/enterprise_api.html)
+
+## 消息代理（Noti服务）
+- [消息代理1.0](http://docs.gizwits.com/zh-cn/Cloud/noti1.0.html)
+消息代理服务简称Noti服务，该服务可以实时将企业设备数据推送到企业应用系统，企业应用系统基于设备数据实现业务需求。企业应用不同于设备与手机应用端的接入，企业应用系统相对独立，有自己的业务功能，只是企业的设备接入了机智云PaaS平台，而企业应用的业务要求必须要将设备数据实时传输到企业应用系统。
+
+## SNoti API (V2.1.3)
+- [SNoti API (V2.1.3)](http://docs.gizwits.com/zh-cn/Cloud/NotificationAPI.html)
+为企业提供 SSL 通讯 API，用于实时推送设备与产品相关的事件。
+
+## 企业API
+- [企业API](http://docs.gizwits.com/zh-cn/Cloud/enterprise_api.html)
+企业API是机智云为接入机智云平台的企业开发者提供的开放API服务，使用企业API的企业将设备接入到机智云平台后，通常还有进一步基于接入机智云设备数据开展企业某个垂直领域的业务需求。企业API为企业提供企业视角全局的设备管理、数据分析等功能，让企业更关注业务管理系统本身，减少不必要的开发成本.
+
+## Gizwits Open API（新）
+- [Gizwits Open API（新）](http://docs.gizwits.com/zh-cn/Cloud/openapi_apps.html)
+机智云 Open API 是 RESTful 风格的 HTTP API，您可以使用任何标准的 HTTP 客户端访问机智云 Open API。Open API 提供如下功能:用户管理、消息中心、绑定管理、设备分享、设备远程监控、定时任务管理、高级数据接口、系统信息等。
+
+## Websocket API 指南
+- [Websocket API 指南](http://docs.gizwits.com/zh-cn/Cloud/WebsocketAPI.html)
+浏览器（Javascript）可以通过Web Socket API与机智云云端直接通讯。浏览器（Javascript）通过 Web Socket API，可以控制设备和实时接收设备上报的数据。
+
+# 用户手册
+## 个人项目产品转企业项目产品
+ 
+ - [个人项目产品转企业项目产品](http://docs.gizwits.com/zh-cn/UserManual/change.html)
+ 个人项目无法开通企业api，D3规则引擎等功能，所以建议企业合作伙伴在创建产品时候，选择注册账号为企业账号，并且在企业项目中创建产品。
+ 
+## OTA使用教程
+  - [OTA使用教程](http://docs.gizwits.com/zh-cn/UserManual/OTA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.html)
+ Wifi产品OTA服务是在开发者中心网站上实现的，由5部分组成：分别是添加固件、验证固件、添加规则、开始推送、推送完成（查询结果）。
+
+ 
+## 产测工具使用文档
+  - [产测工具使用文档](http://docs.gizwits.com/zh-cn/deviceDev/%E4%BA%A7%E6%B5%8B%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.html)
+产测是生产环节中重要的部分，保证了产品的质量，提升自身产品形象。机智云产测工具为批量生产的产品提供了方便快捷的模块与MCU产测方式。在大型生产时，保证模块与MCU可正常使用。
+
+## D3 Engine使用教程
+- [D3 Engine使用教程](http://docs.gizwits.com/zh-cn/UserManual/D3.html)
+D3 Engine是机智云为开发者提供的傻瓜式的数据处理、开发引擎。D3 可以灵活定义数据的输入，能将设备、用户数据与外部第三方数据进行有机整合，还可以支持脚本解析与自定义数据输入，满足不同开发者的数据处理需要。 
+
+## ECE雾计算使用教程
+- [ECE雾计算使用教程](http://docs.gizwits.com/zh-cn/UserManual/ece.html)
+机智云ECE雾计算主要对接智能设备用的通信模组和手机，采取编译性语言（C语言）和解析性语言（Lua）相结合的方式，使用解析性脚本，将适配策略在云端进行配置，配置后通过推送的方式发送到模组或手机，设备收到新的配置策略后，立即执行；配置策略分别负责适配传输层协议适配、业务层协议适配、数据的计算方法等。
+
+## 接入亚马逊Echo音箱教程
+- [接入亚马逊Echo音箱教程](http://docs.gizwits.com/zh-cn/UserManual/echo.html)
+接入机智云的任何智能硬件，都可以使用Echo控制
+
+## 实时大数据使用说明
+- [实时大数据使用说明](http://docs.gizwits.com/zh-cn/UserManual/rtbd.html)
+通过拖放的方式生成API， 用于对产品数据点进行实时大数据统计分析。
+
+## API使用教程
 相关链接：
+- [利用openapi（postman）控制虚拟设备](http://docs.gizwits.com/zh-cn/UserManual/UseOpenAPI.html)
+- [Websocket 网页控制设备](http://docs.gizwits.com/zh-cn/UserManual/UseWebsocket.html)
+- [聚合API使用教程](http://docs.gizwits.com/zh-cn/UserManual/DataAPI.html)
+- [设备联动API使用教程](http://docs.gizwits.com/zh-cn/UserManual/LinkageAPI.html)
 
- [了解企业应用开发](../Cloud/ent_dev.html)
- 
- [了解消息代理服务接口](../Cloud/noti1.0.html)
- 
- [了解企业API](../Cloud/enterprise_api.html)
- 
-## 4、行业解决方案
+
+# 行业解决方案
 机智云拥有多年的经验积累，可为客户提供各个垂直领域的行业解决方案。下面选择几个比较有代表性的行业解决方案： 
 
  [充电桩行业解决方案](http://topic.gizwits.com/chongdianzhuang/)
